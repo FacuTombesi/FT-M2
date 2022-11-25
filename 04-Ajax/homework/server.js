@@ -12,37 +12,37 @@ function getNewId() {
 let amigos = [
   {
     id: 1,
-    name: "Toni",
+    name: "Rachel",
     age: 30,
     email: "toni@henry.com"
   },
   {
     id: 2,
-    name: "Emi",
+    name: "Monica",
     age: 32,
     email: "emi@henry.com"
   },
   {
     id: 3,
-    name: "Martin",
+    name: "Phoebe",
     age: 35,
     email: "martin@henry.com"
   },
   {
     id: 4,
-    name: "Jimmy",
+    name: "Joey",
     age: 35,
     email: "jimmy@henry.com"
   },
   {
     id: 5,
-    name: "Franco",
+    name: "Chandler",
     age: 67,
     email: "franco@gmail.com"
   },
   {
     id: 6,
-    name: "Manu",
+    name: "Ross",
     age: 47,
     email: "manu@henry.com"
   }

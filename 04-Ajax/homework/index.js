@@ -16,7 +16,7 @@ function showFriends() {
     .then(r /*respuesta de lo de arriba*/ => r.json())
     .then(amigos => {
         for (let i = 0; i < amigos.length; i++) {
-            let li = `<li>${amigos[i].name}<button onclick="deleteFriend(${amigos[i].id})">X</button></li>` /*creo una etiqueta li con el nombre de cada amigo*/
+            let li = `<li>${amigos[i].name} <button id="btnX" onclick="deleteFriend(${amigos[i].id})">X</button></li>` /*creo una etiqueta li con el nombre de cada amigo*/
             listaAmigos.innerHTML += li
         }
     })
@@ -32,7 +32,7 @@ function searchFriend() {
     .then(amigo => {
         amigoSearch.innerText = amigo.name /*guarda el nombre en el span #amigo guardado en amigoSearch*/
     })
-    .catch(err => amigoSearch.innerText = `No se encontró al amigo con el id = ${id}`) /*devuelve un error si no encuentra al amigo buscado*/
+    .catch(err => amigoSearch.innerText = `Couldn't find friend with ID n°${id}`) /*devuelve un error si no encuentra al amigo buscado*/
 }
 
 // FUNCTION PARA BOTON DELETE
@@ -47,7 +47,7 @@ function deleteFriend(id) {
     })
     .then(r => r.json())
     .then(r => {
-        respuestaDelete.innerText = `El amigo fue eliminado de la lista`
+        respuestaDelete.innerText = `One of the friends has left New York`
         showFriends()
     })
 }
