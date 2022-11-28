@@ -1,4 +1,5 @@
 import React from "react"
+import Botones from "./Botones";
 
 const studentName = "Facundo Tombesi";
 const techSkills = ["Html", "Css", "JavaScript", "React", "Redux"];
@@ -11,6 +12,7 @@ export default function Bienvenido() {
       <h1>Homework 06 Intro React</h1>
       <h3>{studentName}</h3>
       <ul>{techSkills.map()}</ul>
+      {ReactDOM.render(<Botones alertaM1={alerts.m1} alertaM2={alerts.m2} />)}
     </div>
   )
 }
