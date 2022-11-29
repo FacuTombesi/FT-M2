@@ -11,8 +11,8 @@ export default function Bienvenido() {
     <div>
       <h1>Homework 06 Intro React</h1>
       <h3>{studentName}</h3>
-      <ul>{techSkills.map()}</ul>
-      {ReactDOM.render(<Botones alertaM1={alerts.m1} alertaM2={alerts.m2} />)}
+      <ul>{techSkills.map((skill, index) => <li key={index}>{skill}</li>)}</ul>
+      <Botones alerts={alerts}/>
     </div>
   )
 }

@@ -2,10 +2,10 @@ export default function Card(props) {
    return (
       <div>
          {/* <button onClick={}>X</button> */}
-         <h2>{Rick.name}</h2>
-         <h2>{Rick.species}</h2>
-         <h2>{Rick.gender}</h2>
-         <img  src={Rick.image} alt="Card" />
+         <h2>{props.name}</h2>
+         <h2>{props.species}</h2>
+         <h2>{props.gender}</h2>
+         <img  src={props.image} alt="Card" />
       </div>
    );
 }
