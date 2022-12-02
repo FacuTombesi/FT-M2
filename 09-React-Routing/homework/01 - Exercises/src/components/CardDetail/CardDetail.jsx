@@ -5,10 +5,14 @@ import { useNavigate } from "react-router-dom";
 
 export default function CardDetail() {
   const [cruiseDetail, setCruiseDetail] = React.useState({});
+
   const { id } = useParams();
+  
   const navigate = useNavigate();
 
-  const backToHome = navigate("./")
+  const backToHome = () => {
+    navigate("/")
+  }
 
   React.useEffect(() => {
     //eslint-disable-next-line

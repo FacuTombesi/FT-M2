@@ -13,10 +13,10 @@ export default function App() {
   return (
     <NavBar>
       <Routes>
-        <Route path='/' element=<Home /> />
-        <Route path='/shipping' element=<Shipping /> />
-        <Route path='/promotions' element=<Promotions /> />
-        <Route path='/cruises/:id' element=<CardDetail /> />
+        <Route path='/' element={<Home />} />
+        <Route path='/shipping' element={<Shipping />} />
+        <Route path='/promotions' element={<Promotions />} />
+        <Route path='/cruises/:id' element={<CardDetail />} />
       </Routes>
     </NavBar>
   );
