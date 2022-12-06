@@ -10,16 +10,18 @@ const initialState = {
 
 function contador(state = initialState, action) { // Reducer
   switch (action.type) {
-    case INCREMENTO:
+    case INCREMENTO: // Por convención las constantes se escriben con mayúscula y _ para los espacios
       return {
-        contador: state.contador + action.payload // Devuelve el contador original con el cambio de la action
+        ...state,
+        contador: state.contador + 1 // Devuelve el contador original con el cambio de la action
       }
     case DECREMENTO:
       return {
-        contador: state.contador - action.payload
+        ...state,
+        contador: state.contador - 1
       }
     default:
-      return state;
+      return { ...state }; // Devuelve el estado tal cual está
   }
 }
 
